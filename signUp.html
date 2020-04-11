@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!-- Materialize css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col s12">
+               <div class="card-panel">
+                   <h3 class ="center-align">Sign Up Information</h3>
+                   <form class = "signUp">
+            <div class="row">
+            <div class="input-field col s12">
+                <input id="user_name" name="user_name" type="text" class="validate" required>
+                <label for="user_name">User Name</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="email" type="email" name="email" class="validate" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="password" name="password" type="password" class="validate" required>
+                <label for="Password">Password</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="re-password" name="re-password" type="password" class="validate" required>
+                <label for="re-password">Re-Enter Your Password</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="ph_number" name="ph_number" type="number" class="validate" required>
+                <label for="ph_number">Phone Number</label>
+              </div>
+              <div class="col s12">
+              <button class="btn waves-effect waves-light teal accent-3" type="submit">Next
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+            </div>
+            
+                  
+           </form>
+           </div>
+           </div>
+       </div>
+   </div>
+   <div id="pass-modal" class="modal">
+    <div class="modal-content">
+      <h4>Warning!</h4>
+      <p>Your Password and Re Enter password are not match!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <div id="redi-modal" class="modal">
+    <div class="modal-content">
+      <h4>Success!</h4>
+      <p>Your SignUp Details are complete!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="./userdetail.html" class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+    </div>
+  </div> 
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!-- Materialize JS cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Jquery cdn -->
+
+<script src="./signup.js"></script>
+</html>
