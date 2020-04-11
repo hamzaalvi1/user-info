@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!-- Materialize css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col s12">
+               <div class="card-panel">
+                   <h3 class ="center-align">User Details</h3>
+                   <form class="user-details">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" name="first_name" type="text" class="validate" required>
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" name="last_name" type="text" class="validate" required>
+                <label for="last_name">Last Name</label>
+              </div>
+            
+              <div class="input-field col s12">
+               <p>Select Gender:</p>                  
+                <p>
+              <label>
+                <input name="gender" type="radio" checked value="male"/>
+                <span>Male</span>
+              </label>
+              <br/>
+              <br/>
+
+               </p>
+               <p>
+              <label>
+                <input name="gender" type="radio" value="female" />
+                <span>Female</span>
+              </label>
+              </p>
+            </div>
+              <div class="input-field col s6">
+                <select name="city" id = "city">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="Karachi">Karachi</option>
+                  <option value="Lahore">Lahore</option>
+                  <option value="Islamabad">Islamabad</option>
+                  <option value="Quetta">Quetta</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Kashmir">Kashmir</option>
+
+                </select>
+                <label>Select Your City Name:</label>
+              </div>
+              <div class="input-field col s6">
+                <select name="state" id = "state">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="Sindh">Sindh</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="KPK">KPK</option>
+                  <option value="Balochistan">Balochistan</option>
+                  <option value="Gilgit-Baltistan">Gilgit-Baltistan</option>
+
+                </select>
+                <label>Select Your State:</label>
+              </div>
+              <!--pic upload-->
+        <div  class="file-field input-field col s12 ">
+            <div class="btn teal accent-3">
+            <span>Pic Upload</span>
+            <input name="pic" type="file" id="pic">
+            </div>
+            <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            </div>
+            </div>
+            <div class="input-field col s6">
+                <input id="designation" name="designation" type="text" class="validate">
+                <label for="designation">Designation</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="company" name="company" type="text" class="validate">
+                <label for="company">Company</label>
+              </div>
+              <div class="input-field col s12">
+                <select name="learning-Distance" id = "learning-Distance">
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="matric">Matriculation</option>
+                  <option value="under-graduate">Under Graduate</option>
+                  <option value="graduate">Graduate</option>
+                  <option value="masters">Masters</option>
+                  <option value="phd">PHD</option>
+                  <option value="no-learning">No Learning Distance</option>
+                </select>
+                <label>Learning Distance:</label>
+              </div> 
+              <div class="col s12">
+              <button class="btn waves-effect waves-light teal accent-3" type="submit">Continue
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+
+            </div>
+            
+                  
+           </form>
+           </div>
+           </div>
+       </div>
+   </div> 
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<!-- Materialize JS cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Jquery cdn -->
+
+<script src="./userdetail.js"></script>
+</html>
