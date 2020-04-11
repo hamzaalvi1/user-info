@@ -47,7 +47,7 @@
               </p>
             </div>
               <div class="input-field col s6">
-                <select name="city" id = "city">
+                <select name="city" id = "city" >
                   <option value="" disabled selected>Choose your option</option>
                   <option value="Karachi">Karachi</option>
                   <option value="Lahore">Lahore</option>
@@ -60,7 +60,7 @@
                 <label>Select Your City Name:</label>
               </div>
               <div class="input-field col s6">
-                <select name="state" id = "state">
+                <select name="state" id = "state" > 
                   <option value="" disabled selected>Choose your option</option>
                   <option value="Sindh">Sindh</option>
                   <option value="Punjab">Punjab</option>
@@ -82,15 +82,15 @@
             </div>
             </div>
             <div class="input-field col s6">
-                <input id="designation" name="designation" type="text" class="validate">
+                <input id="designation" name="designation" type="text" class="validate" required>
                 <label for="designation">Designation</label>
               </div>
               <div class="input-field col s6">
-                <input id="company" name="company" type="text" class="validate">
+                <input id="company" name="company" type="text" class="validate" required>
                 <label for="company">Company</label>
               </div>
               <div class="input-field col s12">
-                <select name="learning-Distance" id = "learning-Distance">
+                <select name="learning-Distance" id = "learning-Distance" >
                   <option value="" disabled selected>Choose your option</option>
                   <option value="matric">Matriculation</option>
                   <option value="under-graduate">Under Graduate</option>
@@ -114,7 +114,24 @@
            </div>
            </div>
        </div>
-   </div> 
+       <div id="error-modal" class="modal">
+        <div class="modal-content">
+          <h4>Warning!</h4>
+          <p>All fields are mandatory please fill all fields</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+   </div>
+   <div id="redi-modal" class="modal">
+    <div class="modal-content">
+      <h4>Congratulations!</h4>
+      <p>Your all information is complete!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="./paymentInfo.html" class="modal-action modal-close waves-effect waves-green btn-flat">Show Details</a>
+    </div>
+  </div> 
 </body>
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
