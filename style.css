@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-panel{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    background-color: whitesmoke;
+
+}
+h3{
+    border-top-left-radius: 20px;
+    background: linear-gradient(to right,lightBlue,#64ffda);
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 52px;
+    right: 23px;
+    width: 105%;
+    height: 110px;
+    font-family: "Acme";
+    letter-spacing: 0.25rem;
+    font-size: 50px;
+    text-shadow: 1px 2px 3px grey;
+    
+}
+button[type="submit"]{
+    font-family: "Acme";
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    letter-spacing: .4rem;
+    font-size: 20px;
+    
+}
+
