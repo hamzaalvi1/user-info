@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: url("./28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+}
 
 .card-panel{
     border-top-left-radius: 20px;
@@ -13,7 +16,7 @@
 }
 h3{
     border-top-left-radius: 20px;
-    background: linear-gradient(to right,lightBlue,#64ffda);
+    background: teal;
     color: white;
     padding: 20px;
     position: relative;
