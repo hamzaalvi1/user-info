@@ -32,7 +32,7 @@
                <p>Select Gender:</p>                  
                 <p>
               <label>
-                <input name="gender" type="radio" checked value="male"/>
+                <input name="gender" type="radio" checked value="Male"/>
                 <span>Male</span>
               </label>
               <br/>
@@ -41,7 +41,7 @@
                </p>
                <p>
               <label>
-                <input name="gender" type="radio" value="female" />
+                <input name="gender" type="radio" value="Female" />
                 <span>Female</span>
               </label>
               </p>
@@ -71,16 +71,7 @@
                 </select>
                 <label>Select Your State:</label>
               </div>
-              <!--pic upload-->
-        <div  class="file-field input-field col s12 ">
-            <div class="btn teal accent-3">
-            <span>Pic Upload</span>
-            <input name="pic" type="file" id="pic">
-            </div>
-            <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-            </div>
-            </div>
+                  
             <div class="input-field col s6">
                 <input id="designation" name="designation" type="text" class="validate" required>
                 <label for="designation">Designation</label>
@@ -92,17 +83,17 @@
               <div class="input-field col s12">
                 <select name="learning-Distance" id = "learning-Distance" >
                   <option value="" disabled selected>Choose your option</option>
-                  <option value="matric">Matriculation</option>
-                  <option value="under-graduate">Under Graduate</option>
-                  <option value="graduate">Graduate</option>
-                  <option value="masters">Masters</option>
-                  <option value="phd">PHD</option>
-                  <option value="no-learning">No Learning Distance</option>
+                  <option value="Matric">Matriculation</option>
+                  <option value="Under-graduate">Under Graduate</option>
+                  <option value="Graduate">Graduate</option>
+                  <option value="Masters">Masters</option>
+                  <option value="Phd">PHD</option>
+                  <option value="No-learning">No Learning Distance</option>
                 </select>
                 <label>Learning Distance:</label>
               </div> 
               <div class="col s12">
-              <button class="btn waves-effect waves-light teal accent-3" type="submit">Continue
+              <button class="btn waves-effect waves-light teal " type="submit">Continue
                 <i class="material-icons right">send</i>
               </button>
             </div>
@@ -129,7 +120,7 @@
       <p>Your all information is complete!</p>
     </div>
     <div class="modal-footer">
-      <a href="./paymentInfo.html" class="modal-action modal-close waves-effect waves-green btn-flat">Show Details</a>
+      <a href="./userInfo.html" class="modal-action modal-close waves-effect waves-green btn-flat">Show Details</a>
     </div>
   </div> 
 </body>
@@ -139,7 +130,26 @@
   crossorigin="anonymous"></script>
 <!-- Materialize JS cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!-- Jquery cdn -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB1CjKNpco6BRn4doq55hWKXSFgbkFeG1E",
+    authDomain: "user-info-001.firebaseapp.com",
+    databaseURL: "https://user-info-001.firebaseio.com",
+    projectId: "user-info-001",
+    storageBucket: "user-info-001.appspot.com",
+    messagingSenderId: "656435740430",
+    appId: "1:656435740430:web:61ccd4f93a3cd1dfc4e15f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ const _db = firebase.firestore()
+</script>
+
 
 <script src="./userdetail.js"></script>
 </html>
