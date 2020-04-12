@@ -2,10 +2,8 @@ $(document).ready(function(){
     $('select').formSelect();
   });
 const userDetailForm = document.querySelector(".user-details")
-let _userDetail = {}
-class UserDetails{
-  
 
+class UserDetails{
 static onUserDetailHandler(evt){
 
   const user_detail = {
@@ -14,7 +12,6 @@ static onUserDetailHandler(evt){
   gender : evt.target.elements["gender"].value,
   city : evt.target.elements["city"].value,
   state : evt.target.elements["state"].value,
-  picture : evt.target.elements["pic"].value,
   designation : evt.target.elements["designation"].value,
   company : evt.target.elements["company"].value,
   learningDistance : evt.target.elements["learning-Distance"].value,
@@ -26,7 +23,12 @@ if(user_detail.city === "" || user_detail.state ===  "" || user_detail.learningD
  });
 }
 else{
-  _userDetail = user_detail
+  let signUpDetail = JSON.parse(localStorage.getItem("signUpInfo"))
+  localStorage.removeItem("signUpInfo")
+  let fullDetail = {...signUpDetail,...user_detail}
+  _db.collection("userList").add(fullDetail)
+  .then(()=>console.log("user added"))
+  .catch((err)=> console.log(err))
   userDetailForm.reset()  
   $(document).ready(function(){
     $('#redi-modal').modal();

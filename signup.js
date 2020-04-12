@@ -1,7 +1,7 @@
 
 const signUpform = document.querySelector(".signUp")
 
-let _signUpInfo = {}
+
 class SignUpDetail{
  
 
@@ -20,7 +20,7 @@ if(signUpInfo.rePassword !== signUpInfo.password){
  });
 }
 else{
-  _signUpInfo = signUpInfo
+  localStorage.setItem("signUpInfo",JSON.stringify(signUpInfo))
   signUpform.reset()
   $(document).ready(function(){
     $('#redi-modal').modal();
